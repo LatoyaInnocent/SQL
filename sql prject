@@ -1,0 +1,34 @@
+CREATE TABLE VIDEOS(ID serial PRIMARY KEY, 
+
+
+
+INSERT INTO videos(video_title, video_length, URL)
+VALUES 
+	('Heather Robertson's FREE 12 Week Workout Plan', '33', 'https://www.youtube.com/watch?v=Rd6ao0klUb8&list=PL2ov72VWpiOrZliY8_Upde97LVtSx8pCA&ab_channel=HeatherRobertson'),
+	('Gospel R&B Mix (Classics) 4 hrs | 2021', '1200', 'https://www.youtube.com/watch?v=v5QnFqgthRc&ab_channel=GutterFreeMusic'),
+	('The Richest Man in Babylon Full Audiobook', '980', 'https://www.youtube.com/watch?v=wglndSWrvsM&t=6027s&ab_channel=OLNCaribbean')
+	;
+  
+  
+	SELECT * FROM videos;
+
+
+
+CREATE TABLE reviewers(ID serial PRIMARY KEY, 
+
+
+
+INSERT INTO reviewers (user_name, rating, text_review)
+VALUES 
+('Amy', '4', 'Interesting'),
+('Jane', '4', 'Thought it was amazing!');
+
+
+
+#JOINTABLE
+
+SELECT * FROM videos;
+
+SELECT * FROM reviewers; 
+
+
